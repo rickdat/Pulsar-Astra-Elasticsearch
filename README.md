@@ -81,7 +81,7 @@ analytics and search, and into Astra for low latency transactions.
 
 **Figure 3** show an overview of the data flow from left to right.
 
-
+![image](https://user-images.githubusercontent.com/80357022/113937887-d2737480-97c7-11eb-91d2-8cd2c8bffb6d.png)
 
 **Figure 3**. Data flow in POC
 
@@ -102,28 +102,25 @@ analytics and search, and into Astra for low latency transactions.
 
 Create a table with the following definition.
 
+``` sql
 *CREATE TABLE dbtest.forecast (*
-
 *key text PRIMARY KEY,*
-
 *content text);*
+```
 
 3.  Generate a token and give it the appropriate role for read/write
     operations. We used DB_ADMIN for this demo.
 
 4.  Launch a Pulsar Container using the following command:
 
+``` bash
 *\$ docker run -it \\*
-
 *-p 6650:6650 \\*
-
 *-p 8080:8080 \\*
-
 *-v \$PWD/data:/pulsar/data \\*
-
 *apachepulsar/pulsar:latest \\*
-
 *bin/pulsar standalone*
+```
 
 Optionally, you can use the Production-ready Distribution of Apache
 Pulsar "Luna Streaming" by following the instructions available
