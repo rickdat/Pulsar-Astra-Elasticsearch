@@ -62,7 +62,7 @@ of storage and processing power. Other Pulsar features include:
 
 
 
-| Pulsar features  | |
+
 | ----------- | ----------- |
 | Cloud Agnostic   | Queues                  |
 | Lightweight      | Message transformations |
