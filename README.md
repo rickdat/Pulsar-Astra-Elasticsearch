@@ -147,8 +147,7 @@ in topics directly into the database.
 
 2.  Modify the sink conf file. The Astra sink connector configuration
     requires several undocumented changes. Please refer to the sample
-    file posted in the configurations repository of this POC for
-    additional details and examples.
+    file in the docs folder of this repo for a working template.
 
 3.  Create a new sink by executing the following command and replace the
     "example.yml" file by the name of your sink configuration file.
