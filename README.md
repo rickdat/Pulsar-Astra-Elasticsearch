@@ -146,10 +146,7 @@ stored in topics directly into the database.
 1.  Deploy Elasticsearch sink connector by following the steps described
     [here.](https://pulsar.apache.org/docs/en/io-elasticsearch-sink/)
 
-```{=html}
-<!-- -->
-```
-4.  Create a an ealsticseacrh sink by executing the following command
+2.  Create a an ealsticseacrh sink by executing the following command
     and replace the "example.yml" file by the name of your sink
     configuration file.
 
