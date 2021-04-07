@@ -1,0 +1,5 @@
+configs:
+  elasticSearchUrl: "<elasticsearch IP or url example: http://104.209.142.207:9200>"
+  indexName: "forecast"
+  username: "user here"
+  password: "pass here"
