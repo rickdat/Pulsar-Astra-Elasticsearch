@@ -27,13 +27,15 @@ number of integrations and complexity required to manage direct
 messaging across these systems.
 
 ![image](https://user-images.githubusercontent.com/80357022/113936550-e8803580-97c5-11eb-9997-4afeafd3282c.png)
-  **Figure 1. Individual Direct Messaging**
+ 
+ **Figure 1. Individual Direct Messaging**
 
 **Figure 2** shows a simplified architecture of the same environment
 using Apache Pulsar as a data streaming platform using sink connectors.
 
 ![image](https://user-images.githubusercontent.com/80357022/113936746-3ac15680-97c6-11eb-95ca-02380f8198e5.png)
-  **Figure 2. Data Streaming with Pulsar**
+ 
+ **Figure 2. Data Streaming with Pulsar**
 
 
 ## Why Pulsar
