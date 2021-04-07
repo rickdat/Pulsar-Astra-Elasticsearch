@@ -1,10 +1,6 @@
 # Streaming with Pulsar into Astra and Elasticsearch
 
-This proof of concept outlines the steps to create a data
-streaming environment using Apache Pulsar Sinks in docker. The
-implementation uses Pulsar sink connectors to integrate multiple
-database technologies with data producers, and without the need of
-custom code.
+This proof of concept outlines the steps required to create a data streaming environment using Apache Pulsar Sinks in docker. The implementation uses Pulsar sink connectors to integrate multiple database technologies with data producers without custom coding.
 
 ## Use case.
 
