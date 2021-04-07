@@ -18,14 +18,12 @@ A Python client consumes telemetry data from the National weather service APIs. 
 
 ## Why Data Streaming?
 
-Data Streaming platforms simplify the handling of messages and
-integration of disparate systems that otherwise would require custom
-connectors and data integration processes.
+Data Streaming platforms simplify handling messages and integrating disparate systems that otherwise would require custom connectors and data integration processes.
 
 **Figure 1** exemplifies a scenario in which multiple weather measuring
 technologies developed by different vendors (IBM, Microsoft, Oracle,
 etc) produce data to be stored in multiple destination databases and the
-amount of integrations and complexity required to manage direct
+number of integrations and complexity required to manage direct
 messaging across these systems.
 
 ![image](https://user-images.githubusercontent.com/80357022/113936550-e8803580-97c5-11eb-9997-4afeafd3282c.png)
@@ -67,7 +65,7 @@ weather service API and writes the same data into Pulsar Topics. The
 data from the Pulsar topics is then written into Elasticsearch for data
 analytics and search, and into Astra for low latency transactions.
 
-**Figure 3** show an overview of the data flow from left to right.
+**Figure 3** shows an overview of the data flow from left to right.
 
 ![image](https://user-images.githubusercontent.com/80357022/113937887-d2737480-97c7-11eb-91d2-8cd2c8bffb6d.png)
 
@@ -77,12 +75,12 @@ analytics and search, and into Astra for low latency transactions.
 
 ## Create the Virtual machines, Astra database and Containers.
 
-1.  The Virtual machines can be created anywhere. For this POC we used a
+1.  Virtual machines can be created anywhere. For this POC we used a
     free Azure account and the docker template available at the
     Microsoft marketplace
     [here](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloud-infrastructure-services.docker_ubuntu?tab=overview).
     Create 2 Virtual machines. The first one will be used for
-    Elasticsearch, the second one will be used for Pulsar. Optionally,
+    Elasticsearch, and the second one will be used for Pulsar. Optionally,
     you can host both applications on the same VM.
 
 2.  Create an Astra database named "dbtest" from the Astra console and a
@@ -121,7 +119,7 @@ docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -v $PWD/
 ```
 ## Configuring Pulsar
 
-Now that we have all infrastructure components it is time to configure
+Now that we have all infrastructure components, it is time to configure
 Pulsar and create the Topics and Sink connectors that will connect the
 dots.
 
@@ -133,9 +131,7 @@ in topics directly into the database.
     steps listed in the
     [documentation](https://docs.datastax.com/en/pulsar-connector/1.4/pulsarInstall.html).
 
-2.  Modify the sink conf file. The Astra sink connector configuration
-    requires several undocumented changes. Please refer to the sample
-    file in the docs folder of this repo for a working template.
+2.  Modify the sink conf file. The Astra sink connector configuration requires several undocumented changes. Please refer to the sample file posted in this POC configurations       repository for additional details and examples.
 
 3.  Create a new sink by executing the following command and replace the
     "example.yml" file by the name of your sink configuration file.
