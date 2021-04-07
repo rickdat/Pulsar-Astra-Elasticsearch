@@ -60,7 +60,7 @@ scalability. Pulsar 2 layers architecture allows for independent scaling
 of storage and processing power. Other Pulsar features include:
 
 
-| Syntax      | Description |
+| Pulsar Features      |
 | ----------- | ----------- |
 | Header      | Title       |
 | Paragraph   | Text        |
