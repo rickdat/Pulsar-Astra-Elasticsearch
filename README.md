@@ -168,8 +168,7 @@ will follow the same behavior for messages received in the
 
 ## Streaming data.
 
-To start streaming data download the Python client available at the POC
-GitHub repository and execute the \_\_main\_\_.py file.
+To start streaming data download the Python client available in this repository and execute the __main__.py file.
 
 This application was written using Python 3.9. It can be downloaded from
 [here](https://www.python.org/downloads/).
