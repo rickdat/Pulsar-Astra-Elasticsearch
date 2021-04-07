@@ -114,7 +114,7 @@ content text);
 4.  Launch a Pulsar Container using the following command:
 
 ``` bash
-\$ docker run -it \
+docker run -it \
 -p 6650:6650 \
 -p 8080:8080 \
 -v \$PWD/data:/pulsar/data \
@@ -128,11 +128,9 @@ Pulsar "Luna Streaming" by following the instructions available
 
 5.  Launch a Elasticsearch container using the following command:
 
-*docker run -d -p 9200:9200 -p 9300:9300 -e
-\"discovery.type=single-node\" -v
-\$PWD/data:/usr/share/elasticsearch/data \--name elasticsearch
-elasticsearch:7.10.1*
-
+``` bash
+docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -v $PWD/data:/usr/share/elasticsearch/data --name elasticsearch elasticsearch:7.10.1
+```
 ## Configuring Pulsar
 
 Now that we have all infrastructure components it is time to configure
@@ -154,11 +152,10 @@ in topics directly into the database.
 
 3.  Create a new sink by executing the following command and replace the
     "example.yml" file by the name of your sink configuration file.
-
-*bin/pulsar-admin sinks create \--name forecast-sink \--classname
-com.datastax.oss.sink.pulsar.StringCassandraSinkTask \--sink-config-file
-conf/example.yml \--sink-type cassandra-enhanced \--tenant public
-\--namespace default \--inputs \"persistent://public/default/forecast\"*
+    
+``` bash
+bin/pulsar-admin sinks create --name forecast-sink --classname com.datastax.oss.sink.pulsar.StringCassandraSinkTask --sink-config-file conf/example.yml --sink-type cassandra-enhanced --tenant public --namespace default --inputs "persistent://public/default/forecast"
+```
 
 Create the Pulsar-Elasticsearch sink to enable Pulsar to write messages
 stored in topics directly into the database.
@@ -173,14 +170,12 @@ stored in topics directly into the database.
     and replace the "example.yml" file by the name of your sink
     configuration file.
 
-*bin/pulsar-admin sinks create \--name elasticsearch-sink \\*
-
-*\--sink-config-file conf/elasticsearch-connector.yaml \\*
-
-*\--archive connectors/pulsar-io-elastic-search-2.7.0.nar \\*
-
-*\--tenant public \--namespace default \--inputs
-\"persistent://public/default/forecast_elastic*
+``` bash
+bin/pulsar-admin sinks create --name elasticsearch-sink \
+--sink-config-file conf/elasticsearch-connector.yaml \
+--archive connectors/pulsar-io-elastic-search-2.7.0.nar  \
+--tenant public --namespace default --inputs "persistent://public/default/forecast_elastic
+```
 
 The Astra sink connector created will read any messages entering the
 "forecast" topic and will write them directly into the forecast table
