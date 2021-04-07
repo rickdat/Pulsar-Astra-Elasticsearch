@@ -35,7 +35,6 @@ using Apache Pulsar as a data streaming platform using sink connectors.
 
 ![image](https://user-images.githubusercontent.com/80357022/113936746-3ac15680-97c6-11eb-95ca-02380f8198e5.png)
 
-  ------------------------------------------
   **Figure 2. Data Streaming with Pulsar**
 
 
