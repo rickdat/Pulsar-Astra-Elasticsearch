@@ -59,7 +59,7 @@ One of the biggest advantages of Pulsar is its cost-effective
 scalability. Pulsar 2 layers architecture allows for independent scaling
 of storage and processing power. Other Pulsar features include:
 
-+----------------------+-----------------------------+
+
 | -   Cloud Agnostic   | -   Queues                  |
 |                      |                             |
 | -   Lightweight      | -   Message transformations |
@@ -71,7 +71,7 @@ of storage and processing power. Other Pulsar features include:
 | -   Connectors       | -   Cloud native features   |
 |                      |                             |
 | -   Containerization |                             |
-+----------------------+-----------------------------+
+
 
 ## This POC
 
