@@ -40,7 +40,7 @@ etc) produce data to be stored in multiple destination databases and the
 amount of integrations and complexity required to manage direct
 messaging across these systems.
 
-  ![](media/image1.png){width="3.9270833333333335in" height="3.7203947944007in"}
+![image](https://user-images.githubusercontent.com/80357022/113936550-e8803580-97c5-11eb-9997-4afeafd3282c.png)
   --------------------------------------------------------------------------------
   **Figure 1. Individual Direct Messaging**
 
@@ -80,7 +80,7 @@ analytics and search, and into Astra for low latency transactions.
 
 **Figure 3** show an overview of the data flow from left to right.
 
-![](media/image3.png){width="5.34375in" height="2.3161198600174977in"}
+
 
 **Figure 3**. Data flow in POC
 
