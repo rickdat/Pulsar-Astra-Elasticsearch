@@ -10,7 +10,7 @@ A Python client consumes telemetry data from the National weather service APIs. 
 
 2.  Data streaming platform should be scalable and cost-effective.
 
-## Main Problematic
+## Main Challenges
 
 1.  Clients require low-latency weather telemetry data that could be used for critical weather-dependent services such as aviation and maritime vessels. DataStax Astra is a         great use case for this.
 
