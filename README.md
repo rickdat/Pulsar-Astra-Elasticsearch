@@ -4,25 +4,17 @@ This proof of concept outlines the steps required to create a data streaming env
 
 ## Use case.
 
-A Python client consumes telemetry data from the National weather
-service APIs. This data should be saved into Astra for low latency
-transactions, and to Elasticsearch for analytics and search. Business
-requirements include:
+A Python client consumes telemetry data from the National weather service APIs. This data should be saved into Astra for low latency transactions and saved into Elasticsearch for analytics and search. Additional business requirements for this use case may include:
 
-1.  Integration effort with other database technologies should be
-    minimized.
+1.  Integration effort with other database technologies should be minimized.
 
 2.  Data streaming platform should be scalable and cost-effective.
 
 ## Main Problematic
 
-1.  Clients require low latency weather telemetry data (as close to real
-    time as possible). This would be used for critical weather dependent
-    services such as aviation and maritime vessels. DataStax Astra is a
-    great use case for this.
+1.  Clients require low latency weather telemetry data that could be used for critical weather-dependent services such as aviation and maritime vessels. DataStax Astra is a         great use case for this.
 
-2.  Client requires he ability to run analytics reporting and searches.
-    Elasticsearch will be used for this.
+2.  The client requires the ability to run analytics reporting and searches. Elasticsearch will be used for this.
 
 ## Why Data Streaming?
 
