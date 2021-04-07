@@ -103,9 +103,9 @@ analytics and search, and into Astra for low latency transactions.
 Create a table with the following definition.
 
 ``` sql
-*CREATE TABLE dbtest.forecast (*
-*key text PRIMARY KEY,*
-*content text);*
+CREATE TABLE dbtest.forecast (
+key text PRIMARY KEY,
+content text);
 ```
 
 3.  Generate a token and give it the appropriate role for read/write
@@ -114,12 +114,12 @@ Create a table with the following definition.
 4.  Launch a Pulsar Container using the following command:
 
 ``` bash
-*\$ docker run -it \\*
-*-p 6650:6650 \\*
-*-p 8080:8080 \\*
-*-v \$PWD/data:/pulsar/data \\*
-*apachepulsar/pulsar:latest \\*
-*bin/pulsar standalone*
+\$ docker run -it \
+-p 6650:6650 \
+-p 8080:8080 \
+-v \$PWD/data:/pulsar/data \
+apachepulsar/pulsar:latest \
+bin/pulsar standalone
 ```
 
 Optionally, you can use the Production-ready Distribution of Apache
