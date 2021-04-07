@@ -60,17 +60,12 @@ scalability. Pulsar 2 layers architecture allows for independent scaling
 of storage and processing power. Other Pulsar features include:
 
 
-| -   Cloud Agnostic   | -   Queues                  |
-|                      |                             |
-| -   Lightweight      | -   Message transformations |
-|                      |                             |
-| -   Friendly API     | -   Decoupled architecture  |
-|                      |                             |
-| -   Client libraries | -   Data storage            |
-|                      |                             |
-| -   Connectors       | -   Cloud native features   |
-|                      |                             |
-| -   Containerization |                             |
+| Cloud Agnostic   | Queues                  |
+| Lightweight      | Message transformations |
+| Friendly API     | Decoupled architecture  |
+| Client libraries | Data storage            |
+| Connectors       | Cloud native features   |
+| Containerization |
 
 
 ## This POC
